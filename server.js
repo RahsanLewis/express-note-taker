@@ -50,7 +50,7 @@ app.delete('/api/notes/:id', (req, res) => {
 
     fs.writeFileSync('./db.json', JSON.stringify(filteredNotes));
 
-    res.send('Note deleted successfully.');
+    res.send('Note deleted');
 });
 
 app.listen(PORT, () => {
